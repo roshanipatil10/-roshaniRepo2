@@ -1,0 +1,19 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# allowed_scripts.txt  —  Script Trigger allowlist for Daily Ops Runner
+# ─────────────────────────────────────────────────────────────────────────────
+#
+# Rules:
+#   • One FULL absolute path per line
+#   • Lines starting with '#' are comments and are ignored
+#   • Blank lines are ignored
+#   • Paths are normalised before comparison (/a/../b == /b)
+#   • This file is re-read on every request — no Flask restart needed
+#
+# Example entries (uncomment and edit):
+#
+# /opt/scripts/cleanup.sh
+# /opt/scripts/restart_service.sh
+# /home/hadoop/bin/check_yarn.sh
+# /usr/local/ops/disk_report.py
+#
+# ─────────────────────────────────────────────────────────────────────────────
